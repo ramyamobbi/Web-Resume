@@ -3,11 +3,12 @@
 <head>
      <meta charset="utf-8">
      <meta http-equiv="X-UA-compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
      <title>document portfolio website</title>
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <link rel="javascript" href="script.jss">
 <div id="header">
   <div class="container">
     <nav>
@@ -20,7 +21,7 @@
       </ul>
     </nav>
     <div class="header-text">
-      <p>Web Designer</p>
+      <p>Clinical Pharmacologist</p>
       <h1>Hi, I'm <span>RAMYA M</span><br>from INDIA</h1>
     </div>
   </div>
@@ -32,11 +33,41 @@
         <img src="images/Ramya About.png">
       </div>
       <div class="About-col-2">
-        <h1>About me</h1>
+        <h1 class="sub-title">About me</h1>
+        <p>I am a Doctor of Pharmacy Graduate from RGUHSC Bangalore<br>
+           where I exceled in quality patient care and medication management,<br>
+           working with a team of pharmacists, physicians, nurses,<br>
+           and other healthcare professionals.<br>
+           I ensure safe and effective drug therapy andpatient education and <br>
+           participate in research projects and continuing education programs <br>
+           to enhance my clinical and professional competencies.
+        </p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+          <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">education</p>
+        </div>
+        <div class="tab-contents" id="skills">
+          <ul>
+            <li><span>Laboratory Skills</span><br>Techniques like HPLC,spectrophotometry,Assay techniques</li>
+            <li><span>Statistical skills</span><br>EXCEL,Microsoft word,Spss,Graphpad prism</li>
+            <li><span>computer skills</span><br>html,css,basic web development skills</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="Experience">
+          <ul>
+            <li><span>2023-Clinical Pharmacologist intern</span><br>Bangalore Baptist Hospital, Mother Hospital</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span> B Pharmacy-2007</span><br>Sri Padmavathi Mahila Vishwavidyalaya-GPA 3.53</li>
+            <li><span>Doctor of Pharmacy</span><br>Rajiv Gandhi University of Health Sciences-GPA 3.8</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
 </body>
 </html>
